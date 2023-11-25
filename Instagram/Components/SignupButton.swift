@@ -10,11 +10,11 @@ import SwiftUI
 struct SignupButton: View {
     var body: some View {
         HStack {
-            Text("Don't have an account?")
+            Text(TEXT_NEED_AN_ACCOUNT)
                 .font(.footnote)
                 .foregroundStyle(.gray)
 
-            Text("Sign up")
+            Text(TEXT_SIGN_UP)
                 .foregroundStyle(.black)
         }
     }

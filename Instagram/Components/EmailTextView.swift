@@ -13,11 +13,9 @@ struct EmailTextView: View {
         HStack {
             Image(systemName: "envelope.fill")
                 .foregroundStyle(Color(red: 0, green: 0, blue: 0, opacity: 0.30))
-            TextField("Email", text: $email)
+            TextField(TEXT_EMAIL, text: $email)
         }
-        .padding()
-        .border(Color(red: 0, green: 0, blue: 0, opacity: 0.15), width: 1)
-        .padding([.leading, .top, .trailing])
+        .modifier(TextFieldModifier())
     }
 }
 

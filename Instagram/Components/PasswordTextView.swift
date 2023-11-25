@@ -13,11 +13,9 @@ struct PasswordTextView: View {
         HStack {
             Image(systemName: "lock.fill")
                 .foregroundStyle(Color(red: 0, green: 0, blue: 0, opacity: 0.30))
-            SecureField("Password", text: $password)
+            SecureField(TEXT_PASSWORD, text: $password)
         }
-        .padding()
-        .border(Color(red: 0, green: 0, blue: 0, opacity: 0.15), width: 1)
-        .padding([.leading, .top, .trailing])
+        .modifier(TextFieldModifier())
     }
 }
 

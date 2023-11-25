@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SigninButton: View {
+    var action: () -> Void
+    var label: String
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: action, label: {
             HStack {
                 Spacer()
-                Text("Sign in")
+                Text(label)
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                 Spacer()
@@ -24,8 +26,4 @@ struct SigninButton: View {
         .shadow(radius: 10, x: 0, y: 10)
         .padding()
     }
-}
-
-#Preview {
-    SigninButton()
 }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SigninView.swift
 //  Instagram
 //
 //  Created by Greg Delgado on 11/25/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SigninView: View {
     @State var email: String = ""
     @State var password: String = ""
 
@@ -25,7 +25,7 @@ struct ContentView: View {
 
             PasswordTextView(password: $password)
 
-            SigninButton()
+            SigninButton(action: {}, label: TEXT_SIGN_IN)
 
             Divider()
 
@@ -35,5 +35,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SigninView()
 }

@@ -14,11 +14,11 @@ struct HeaderView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
-            Text("Photo Sharing")
+            Text(TEXT_SIGNIN_HEADLINE)
                 .font(.title)
                 .padding(.bottom)
 
-            Text("The easiest way to share photos between family and friends")
+            Text(TEXT_SIGNIN_SUB_HEADLINE)
                 .font(.subheadline)
                 .foregroundStyle(Color.gray)
                 .multilineTextAlignment(.center)
