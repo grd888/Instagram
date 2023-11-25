@@ -20,10 +20,6 @@ struct SigninButton: View {
                 Spacer()
             }
         })
-        .padding()
-        .background(Color.black)
-        .clipShape(RoundedRectangle(cornerRadius: 5), style: FillStyle())
-        .shadow(radius: 10, x: 0, y: 10)
-        .padding()
+        .modifier(SigninButtonModifier())
     }
 }

@@ -12,12 +12,15 @@
 		4D1DACDB2B117DC900AFA13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1DACDA2B117DC900AFA13A /* Assets.xcassets */; };
 		4D1DACDE2B117DC900AFA13A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1DACDD2B117DC900AFA13A /* Preview Assets.xcassets */; };
 		4D1DACE62B1194BB00AFA13A /* SigninButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACE52B1194BB00AFA13A /* SigninButton.swift */; };
-		4D1DACE82B1194E700AFA13A /* SignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACE72B1194E700AFA13A /* SignupButton.swift */; };
+		4D1DACE82B1194E700AFA13A /* SignupText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACE72B1194E700AFA13A /* SignupText.swift */; };
 		4D1DACEA2B11950600AFA13A /* PasswordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACE92B11950600AFA13A /* PasswordTextView.swift */; };
 		4D1DACEC2B11953B00AFA13A /* EmailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACEB2B11953B00AFA13A /* EmailTextView.swift */; };
 		4D1DACEE2B11955C00AFA13A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DACED2B11955C00AFA13A /* HeaderView.swift */; };
 		4D1DAD2E2B121A5A00AFA13A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD2D2B121A5A00AFA13A /* Constants.swift */; };
 		4D1DAD302B121B6700AFA13A /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD2F2B121B6700AFA13A /* Modifiers.swift */; };
+		4D1DAD322B122B6F00AFA13A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD312B122B6F00AFA13A /* SignupView.swift */; };
+		4D1DAD342B122C7500AFA13A /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD332B122C7500AFA13A /* UsernameTextField.swift */; };
+		4D1DAD362B122EAB00AFA13A /* SignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD352B122EAB00AFA13A /* SignupButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +30,15 @@
 		4D1DACDA2B117DC900AFA13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D1DACDD2B117DC900AFA13A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D1DACE52B1194BB00AFA13A /* SigninButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninButton.swift; sourceTree = "<group>"; };
-		4D1DACE72B1194E700AFA13A /* SignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupButton.swift; sourceTree = "<group>"; };
+		4D1DACE72B1194E700AFA13A /* SignupText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupText.swift; sourceTree = "<group>"; };
 		4D1DACE92B11950600AFA13A /* PasswordTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextView.swift; sourceTree = "<group>"; };
 		4D1DACEB2B11953B00AFA13A /* EmailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextView.swift; sourceTree = "<group>"; };
 		4D1DACED2B11955C00AFA13A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4D1DAD2D2B121A5A00AFA13A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D1DAD2F2B121B6700AFA13A /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		4D1DAD312B122B6F00AFA13A /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		4D1DAD332B122C7500AFA13A /* UsernameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		4D1DAD352B122EAB00AFA13A /* SignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			children = (
 				4D1DACD62B117DC700AFA13A /* InstagramApp.swift */,
 				4D1DACD82B117DC700AFA13A /* SigninView.swift */,
+				4D1DAD312B122B6F00AFA13A /* SignupView.swift */,
 				4D1DAD2F2B121B6700AFA13A /* Modifiers.swift */,
 				4D1DAD2D2B121A5A00AFA13A /* Constants.swift */,
 				4D1DACE42B11948900AFA13A /* Components */,
@@ -87,11 +94,13 @@
 		4D1DACE42B11948900AFA13A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4D1DACED2B11955C00AFA13A /* HeaderView.swift */,
 				4D1DACE52B1194BB00AFA13A /* SigninButton.swift */,
-				4D1DACE72B1194E700AFA13A /* SignupButton.swift */,
+				4D1DAD352B122EAB00AFA13A /* SignupButton.swift */,
+				4D1DACE72B1194E700AFA13A /* SignupText.swift */,
 				4D1DACEB2B11953B00AFA13A /* EmailTextView.swift */,
 				4D1DACE92B11950600AFA13A /* PasswordTextView.swift */,
-				4D1DACED2B11955C00AFA13A /* HeaderView.swift */,
+				4D1DAD332B122C7500AFA13A /* UsernameTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,11 +179,14 @@
 				4D1DACEA2B11950600AFA13A /* PasswordTextView.swift in Sources */,
 				4D1DACEC2B11953B00AFA13A /* EmailTextView.swift in Sources */,
 				4D1DACE62B1194BB00AFA13A /* SigninButton.swift in Sources */,
+				4D1DAD322B122B6F00AFA13A /* SignupView.swift in Sources */,
 				4D1DACD72B117DC700AFA13A /* InstagramApp.swift in Sources */,
-				4D1DACE82B1194E700AFA13A /* SignupButton.swift in Sources */,
+				4D1DACE82B1194E700AFA13A /* SignupText.swift in Sources */,
+				4D1DAD362B122EAB00AFA13A /* SignupButton.swift in Sources */,
 				4D1DACEE2B11955C00AFA13A /* HeaderView.swift in Sources */,
 				4D1DAD302B121B6700AFA13A /* Modifiers.swift in Sources */,
 				4D1DAD2E2B121A5A00AFA13A /* Constants.swift in Sources */,
+				4D1DAD342B122C7500AFA13A /* UsernameTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

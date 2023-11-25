@@ -29,7 +29,7 @@ struct SigninView: View {
 
             Divider()
 
-            SignupButton()
+            SignupText()
         }
     }
 }

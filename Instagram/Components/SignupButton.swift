@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct SignupButton: View {
+    var action: () -> Void
+    var label: String
     var body: some View {
-        HStack {
-            Text(TEXT_NEED_AN_ACCOUNT)
-                .font(.footnote)
-                .foregroundStyle(.gray)
-
-            Text(TEXT_SIGN_UP)
-                .foregroundStyle(.black)
-        }
+        Button(action: action, label: {
+            HStack {
+                Spacer()
+                Text(label)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+                Spacer()
+            }
+        })
+        .modifier(SigninButtonModifier())
     }
 }
-#Preview {
-    SignupButton()
-}
+
