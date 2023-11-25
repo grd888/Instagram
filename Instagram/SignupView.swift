@@ -18,7 +18,7 @@ struct SignupView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
-                .padding(.bottom, 50)
+                .padding(.bottom, 80)
 
             UsernameTextField(username: $username)
 
@@ -42,6 +42,8 @@ struct SignupView: View {
                 .lineLimit(nil)
                 .padding()
         }
+        .navigationTitle("Register")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

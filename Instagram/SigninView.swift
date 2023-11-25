@@ -12,25 +12,31 @@ struct SigninView: View {
     @State var password: String = ""
 
     var body: some View {
-        VStack {
-            Spacer()
+        NavigationView {
+            VStack {
+                Spacer()
 
-            HeaderView()
+                HeaderView()
 
-            Spacer()
+                Spacer()
 
-            Divider()
+                Divider()
 
-            EmailTextView(email: $email)
+                EmailTextView(email: $email)
 
-            PasswordTextView(password: $password)
+                PasswordTextView(password: $password)
 
-            SigninButton(action: {}, label: TEXT_SIGN_IN)
+                SigninButton(action: {}, label: TEXT_SIGN_IN)
 
-            Divider()
-
-            SignupText()
+                Divider()
+                NavigationLink{
+                    SignupView()
+                } label: {
+                    SignupText()
+                }
+            }
         }
+        .tint(.black)
     }
 }
 
